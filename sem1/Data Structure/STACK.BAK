@@ -1,0 +1,71 @@
+#include<stdio.h>
+#include<conio.h>
+#define SIZE 100
+int stack[SIZE];
+int top;
+int a;
+int choice;
+void push();
+void pop();
+void print();
+int main(){
+clrscr();
+top=-1;
+do{
+printf("1.insert\n2.delete\n3.display\n4.exit\nenter your choice");
+scanf("%d",&choice);
+switch(choice)
+{
+case 1:push();
+break;
+case 2:pop();
+break;
+case 3:print();
+break;
+case 4:exit(0);
+break;
+default:printf("invalid choice\n");
+break;
+}
+}
+while(choice!=4);
+return 0;
+}
+void push()
+{  int value;
+if(top==SIZE-1)
+{printf("stack is empty");
+}
+else
+{
+printf("enter the element to push into stack:");
+scanf("%d",&value);
+printf("element added\n");
+top++;
+stack[top]=value;
+}
+}
+void pop()
+{
+int value;
+if(top==-1)
+{print("stack is empty");
+}
+else
+{ value=stack[top];
+printf("deleted element:%d\n",value);
+printf("deleted\n");
+top--;
+}
+}
+void print()
+{ if(top==-1)
+{printf("stack is empty");
+}
+else if(top>=0)
+{printf("elements of stack are:\n");
+for(a=top;a>=0;a--)
+{printf("%d\n",stack[a]);
+}
+}
+}
