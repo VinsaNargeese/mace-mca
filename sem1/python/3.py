@@ -1,5 +1,5 @@
-s=input('enter a string:')
-c=s[0]
-s=s.replace(c,'$')
-s=c+s[1:]
-print('new string:',s)
+a=input("enter a string:")
+b=a[0]
+a=a.replace(b,"&")
+a=b+a[1:]
+print("output:",a)

@@ -1,3 +1,3 @@
-a=input('enter the file name')
-a=a.split('.')
-print(a[1])
+a=input("enter filename:")
+a=a.split(".")
+print("extension of file:",a[1])
