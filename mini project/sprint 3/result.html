@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <title>Transaction Prediction</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Transaction Prediction</h1>
+        <form action="/predict" method="post">
+            <!-- Repeat the pattern for V1 to V28 -->
+            <label for="V1">Enter Value for V1:</label>
+            <select name="V1" required>
+                <option value="-0.769171692">-0.769171692</option>
+                <option value="1">1</option>
+                <option value="-4.727712656">-4.727712656</option>
+                <option value="-4.064004738">-4.064004738</option>
+            </select><br>
+
+            <label for="V2">Enter Value for V2:</label>
+            <select name="V2" required>
+                <option value="1.342212256">1.342212256</option>
+                <option value="1">1</option>
+                <option value="3.044469102">3.044469102</option>
+                <option value="3.100934891">3.100934891</option>
+            </select><br>
+
+            <label for="V3">Enter Value for V3:</label>
+            <select name="V3" required>
+                <option value="-2.171454137">-2.171454137</option>
+                <option value="1">1</option>
+                <option value="-5.598354267">-5.598354267</option>
+                <option value="-1.188498004">-1.188498004</option>
+            </select><br>
+
+            <label for="V4">Enter Value for V4:</label>
+            <select name="V4" required>
+                <option value="-0.799887767">-0.799887767</option>
+                <option value="1">1</option>
+                <option value="5.928190802">5.928190802</option>
+                <option value="3.26463274">3.26463274</option>
+            </select><br>
+
+            <label for="V5">Enter Value for V5:</label>
+            <select name="V5" required>
+                <option value="-0.648374467">-0.648374467</option>
+                <option value="1">1</option>
+                <option value="-2.190769729">-2.190769729</option>
+                <option value="-1.903562358">-1.903562358</option>
+            </select><br>
+
+            <label for="V6">Enter Value for V6:</label>
+            <select name="V6" required>
+                <option value="-0.973504253">-0.973504253</option>
+                <option value="1">1</option>
+                <option value="-1.529322966">-1.529322966</option>
+                <option value="0.320350587">0.320350587</option>
+            </select><br>
+
+            <label for="V7">Enter Value for V7:</label>
+            <select name="V7" required>
+                <option value="-1.706657654">-1.706657654</option>
+                <option value="1">1</option>
+                <option value="-4.48742196">-4.48742196</option>
+                <option value="-0.954940039">-0.954940039</option>
+            </select><br>
+
+            <label for="V8">Enter Value for V8:</label>
+            <select name="V8" required>
+                <option value="0.313744517">0.313744517</option>
+                <option value="1">1</option>
+                <option value="0.916391814">0.916391814</option>
+                <option value="-3.27753492">-3.27753492</option> 
+            </select><br>
+
+            <label for="V9">Enter Value for V9:</label>
+            <select name="V9" required>
+                <option value="-1.982301847">-1.982301847</option>
+                <option value="1">1</option>
+                <option value="-1.307010423">-1.307010423</option>
+                <option value="2.820828662">2.820828662</option>
+            </select><br>
+
+            <label for="V10">Enter Value for V10:</label>
+            <select name="V10" required>
+                <option value="-3.158127006">-3.158127006</option>
+                <option value="1">1</option>
+                <option value="-4.138891214">-4.138891214</option>
+                <option value="1.01511288">1.01511288</option>
+            </select><br>
+
+            <label for="V11">Enter Value for V11:</label>
+            <select name="V11" required>
+                <option value="1.341571722">1.341571722</option>
+                <option value="1">1</option>
+                <option value="5.149408783">5.149408783</option>
+                <option value="3.187186897">3.187186897</option>
+            </select><br>
+
+            <label for="V12">Enter Value for V12:</label>
+            <select name="V12" required>
+                <option value="-3.29947237">-3.29947237</option>
+                <option value="1">1</option>
+                <option value="-11.12401861">-11.12401861</option>
+                <option value="-7.004327284">-7.004327284</option>
+            </select><br>
+
+            <label for="V13">Enter Value for V13:</label>
+            <select name="V13" required>
+                <option value="1.247647374">1.247647374</option>
+                <option value="1">1</option>
+                <option value="0.543067766">0.543067766</option>
+                <option value="0.872710605">0.872710605</option> 
+            </select><br>
+
+            <label for="V14">Enter Value for V14:</label>
+            <select name="V14" required>
+                <option value="-6.393372843">-6.393372843</option>
+                <option value="1">1</option>
+                <option value="-7.840942205">-7.840942205</option>
+                <option value="-6.220605353">-6.220605353</option>
+            </select><br>
+
+            <label for="V15">Enter Value for V15:</label>
+            <select name="V15" required>
+                <option value="-0.053204802">-0.053204802</option>
+                <option value="1">1</option>
+                <option value="0.743633945">0.743633945</option>
+                <option value="-0.90444463">-0.90444463</option> 
+            </select><br>
+
+            <label for="V16">Enter Value for V16:</label>
+            <select name="V16" required>
+                <option value="-3.258046341">-3.258046341</option>
+                <option value="1">1</option>
+                <option value="-6.77706924">-6.77706924</option>
+                <option value="-3.075091885">-3.075091885</option>
+            </select><br>
+
+            <label for="V17">Enter Value for V17:</label>
+            <select name="V17" required>
+                <option value="-3.348896098">-3.348896098</option>
+                <option value="1">1</option>
+                <option value="-9.931765154">-9.931765154</option>
+                <option value="-5.044735692">-5.044735692</option> 
+            </select><br>
+
+            <label for="V18">Enter Value for V18:</label>
+            <select name="V18" required>
+                <option value="0.217330714">0.217330714</option>
+                <option value="1">1</option>
+                <option value="-4.093021122">-4.093021122</option>
+                <option value="-1.718082685">-1.718082685</option>
+            </select><br>  
+
+            <label for="V19">Enter Value for V19:</label>
+            <select name="V19" required>
+                <option value="-0.917407955">-0.917407955</option>
+                <option value="1">1</option>
+                <option value="1.504924859">1.504924859</option>
+                <option value="-1.718082685">-1.718082685</option>
+            </select><br>
+
+            <label for="V20">Enter Value for V20:</label>
+            <select name="V20" required>
+                <option value="-0.102294252">-0.102294252</option>
+                <option value="1">1</option>
+                <option value="-0.207759445">-0.207759445</option>
+                <option value="-0.531897693">-0.531897693</option>
+            </select><br>
+
+            <label for="V21">Enter Value for V21:</label>
+            <select name="V21" required>
+                <option value="-0.036122295">-0.036122295</option>
+                <option value="1">1</option>
+                <option value="0.650988236">0.650988236</option>
+                <option value="1.688665431">1.688665431</option>
+            </select><br>
+
+            <label for="V22">Enter Value for V22:</label>
+            <select name="V22" required>
+                <option value="-0.753591203">-0.753591203</option>
+                <option value="1">1</option>
+                <option value="0.254983289">0.254983289</option>
+                <option value="-0.078844698">-0.078844698</option>
+            </select><br>
+
+            <label for="V23">Enter Value for V23:</label>
+            <select name="V23" required>
+                <option value="-0.047113397">-0.047113397</option>
+                <option value="1">1</option>
+                <option value="0.628843469">0.628843469</option>
+                <option value="0.193730927">0.193730927</option> 
+            </select><br>
+
+            <label for="V24">Enter Value for V24:</label>
+            <select name="V24" required>
+                <option value="0.358492768">0.358492768</option>
+                <option value="1">1</option>
+                <option value="-0.238128454">-0.238128454</option>
+                <option value="0.479495954">0.479495954</option>
+            </select><br>
+
+            <label for="V25">Enter Value for V25:</label>
+            <select name="V25" required>
+                <option value="-0.287406816">-0.287406816</option>
+                <option value="1">1</option>
+                <option value="-0.671332332">-0.671332332</option>
+                <option value="-0.506603057">-0.506603057</option>
+            </select><br>
+
+            <label for="V26">Enter Value for V26:</label>
+            <select name="V26" required>
+                <option value="0.476505957">0.476505957</option>
+                <option value="1">1</option>
+                <option value="-0.033590063">-0.033590063</option>
+                <option value="-0.409862744">-0.409862744</option> 
+            </select><br>
+
+            <label for="V27">Enter Value for V27:</label>
+            <select name="V27" required>
+                <option value="0.250530561">0.250530561</option>
+                <option value="1">1</option>
+                <option value="-1.331777322">-1.331777322</option>
+                <option value="-3.036271329">-3.036271329</option>
+            </select><br>
+
+            <label for="V28">Enter Value for V28:</label>
+            <select name="V28" required>
+                <option value="0.250987223">0.250987223</option>
+                <option value="1">1</option>
+                <option value="-1.331777322">-1.331777322</option>
+                <option value="-0.630605199">-0.630605199</option>
+            </select><br>
+
+            <label for="Amount">Amount:</label>
+            <select name="Amount" required>
+                <option value="40">40</option>
+                <option value="1">1</option>
+                <option value="30.39">30.39</option>
+                <option value="179.66">179.66</option>
+            </select><br>
+
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
