@@ -40,3 +40,12 @@ details.
 plot.
 (iii) Implement the k-NN classification algorithm using the dataset. Try with
 different K values and show the accuracy.
+
+8)Dataset: <Housing_Price.csv>
+
+(i) Conduct exploratory data analysis on the given dataset and report the
+details.
+(ii) Visualize the analysis results using (i) scatter plot (ii) histogram & (iii) box
+plot.
+(iii) Implement the K-Means clustering algorithm using the dataset. Try with
+different k values and show the accuracy.
