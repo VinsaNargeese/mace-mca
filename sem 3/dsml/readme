@@ -2,3 +2,7 @@
   Classification Report , Confusion Matrix , Plot Decision Tree
 2)Apply kMeans clustering on Wisconsin Dataset. Assume k=2 and plot a graph for the derived clusters. 
    Also generate elbow graph for this problem and check whether our assumption for k as 2 is true.also find centroides
+3)Dataset: <Breast_Cancer.csv>
+     (i) Conduct exploratory data analysis on the given dataset and report the details.
+    (ii) Visualize the analysis results using (i) scatter plot (ii) histogram & (iii) box plot.
+    (iii) Implement the k-NN classification algorithm using the dataset. Try with different k values and show the accuracy.
