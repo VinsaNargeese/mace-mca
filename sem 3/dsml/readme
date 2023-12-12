@@ -22,3 +22,12 @@ details.
 plot.
 (iii) Implement the Multiple Linear Regression algorithm using the dataset and
 show the accuracy.
+
+6)Dataset: <Breast_Cancer.csv>
+
+(i) Conduct exploratory data analysis on the given dataset and report the
+details.
+(ii) Visualize the analysis results using (i) scatter plot (ii) histogram & (iii) box
+plot.
+(iii) Implement the Naïve Bayes classification algorithm using the dataset.
+Display the classification report the accuracy.
