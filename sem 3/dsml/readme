@@ -13,3 +13,12 @@
   (i) Conduct exploratory data analysis on the given dataset and report the details.
   (ii) Visualize the analysis results using (i) scatter plot (ii) histogram & (iii) box plot.
   (iii) Implement the K-Means clustering algorithm using the dataset. Try with different K values and
+
+5)Dataset: <Iris.csv>
+
+(i) Conduct exploratory data analysis on the given dataset and report the
+details.
+(ii) Visualize the analysis results using (i) scatter plot (ii) histogram & (iii) box
+plot.
+(iii) Implement the Multiple Linear Regression algorithm using the dataset and
+show the accuracy.
