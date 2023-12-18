@@ -1,0 +1,108 @@
+String.xml
+<resources>
+ <string name="app_name">spinnericecream</string>
+ <string-array name="icespnr">
+ <item>vanilla</item>
+ <item>chocolate</item>
+ <item>strawberry</item>
+ </string-array>
+</resources>
+activity_main.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+ xmlns:tools="http://schemas.android.com/tools"
+ android:orientation="vertical"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ tools:context=".MainActivity">
+ <Spinner
+ android:id="@+id/spnr"
+ android:layout_width="204dp"
+ android:layout_height="204dp"
+ app:layout_constraintBottom_toBottomOf="parent"
+ app:layout_constraintEnd_toEndOf="parent"
+ app:layout_constraintStart_toStartOf="parent"
+ app:layout_constraintTop_toTopOf="parent" />
+</LinearLayout>
+MainActivity.java
+package com.example.spinnericecream;
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
+public class MainActivity extends AppCompatActivity {
+ Spinner spnr;
+ String[] icecreams;
+ @Override
+ protected void onCreate(Bundle savedInstanceState) {
+ super.onCreate(savedInstanceState);
+ setContentView(R.layout.activity_main);
+ spnr=(Spinner) findViewById(R.id.spnr);
+ icecreams=getResources().getStringArray(R.array.icespnr);
+ ArrayAdapter<String>adapter=new ArrayAdapter<>(this, 
+android.R.layout.simple_spinner_item,icecreams);
+ 
+adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_ite
+m);
+ spnr.setAdapter(adapter);
+ spnr.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+ @Override
+ public void onItemSelected(AdapterView<?> adapterView, View view, int 
+pos, long l) {
+ String selecteditem=icecreams[pos];
+ Intent i=new Intent(MainActivity.this,second.class);
+ i.putExtra("icecream",selecteditem);
+ startActivity(i);
+ }
+ @Override
+ public void onNothingSelected(AdapterView<?> adapterView) {
+ }
+ });
+ }
+}
+activity_second.xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ xmlns:app="http://schemas.android.com/apk/res-auto"
+ xmlns:tools="http://schemas.android.com/tools"
+ android:orientation="vertical"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"
+ tools:context=".second">
+ <ImageView
+ android:id="@+id/iv1"
+ android:layout_width="match_parent"
+ android:layout_height="match_parent"/>
+</LinearLayout>
+Second.java
+package com.example.spinnericecream;
+import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.widget.ImageView;
+public class second extends AppCompatActivity {
+ ImageView iv1;
+ int imageresource;
+ @Override
+ protected void onCreate(Bundle savedInstanceState) {
+ super.onCreate(savedInstanceState);
+ setContentView(R.layout.activity_second);
+ iv1=(ImageView) findViewById(R.id.iv1);
+ Intent i=getIntent();
+ String selecteditem=i.getStringExtra("icecream");
+ if ("vanilla".equals(selecteditem)){
+ imageresource=R.drawable.vanila;
+ }
+ else if("chocolate".equals(selecteditem)){
+ imageresource=R.drawable.choco;
+ }
+ else if("strawberry".equals(selecteditem)){
+ imageresource=R.drawable.strawberry;
+ }
+ iv1.setImageResource(imageresource);
+ }
+}
